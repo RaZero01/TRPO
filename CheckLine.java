@@ -14,7 +14,7 @@ public class CheckLine {
         String d2 = s2.nextLine();
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(d);
-        String regex2 = "[a-zA-Z0-9]+@[a-zA-Z0-9\\.]+(ru|com)";
+        String regex2 = "^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$";
         Pattern pattern2 = Pattern.compile(regex2);
         Matcher matcher2 = pattern2.matcher(d2);
 
